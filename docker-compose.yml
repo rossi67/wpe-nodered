@@ -1,0 +1,11 @@
+version: '2'
+services:
+  app:
+    build: ./nodered
+    expose:
+      - "80"
+  
+  gui:
+    build: ./wpe
+    depends_on:
+      - nodered
