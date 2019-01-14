@@ -2,9 +2,6 @@ version: '2'
 services:
   nodered:
     build: ./nodered
-    expose:
-      - "80"
-  
   gui:
     build: ./wpe
     depends_on:
